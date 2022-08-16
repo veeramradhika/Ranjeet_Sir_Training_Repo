@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BooksMVCWebAPI.API.Models.BookViewModel>
+
+@{
+    ViewData["Title"] = "List of books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="background-color:palegreen">
+
+<h1 style="color:blue;">List of books</h1>
+
+<p>
+    <a asp-action="Create" style="color:dodgerblue;">Add New Book</a>
+<div class="text-center">
+    <h1 style="color:black" class="display-4"><b>Welcome to Online BookStore</i></h1>
+</div>
+
+</p>
+<form asp-action="Search">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-7">
+            <input type="search" name="searchString" class="form-control"/>
+        </div>
+        <div class="col-md-1">
+            <input type="submit" value="Search" class="btn btn-info"/>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</form>
+<br/>
+<div class="row">
+    @foreach(var item in Model)
+    {
+       <div class="col-md-3" style="padding-inline">
+        <p><img class="img-thumbnail" src="/BookImage/@item.BookImage" width="200px" height="200px" />
+        <div class="row">
+        <div class="col-sm-12">
+       <h5  style="color:black">Name:@item.BookName</h5>
+      <h5  style="color:black">Zoner: @item.BookZoner</h5>
+      <h5 style="color:black">cost: @item.Cost</h5><br/></div>
+       </div>
+        <a asp-action="Edit" asp-route-Id="@item.BookId" class="btn btn-warning" >Edit </a>|
+        <a asp-action="Details" asp-route-Id="@item.BookId" class="btn btn-success">Details </a>|
+        <a asp-action="Delete" asp-route-Id="@item.BookId" class="btn btn-danger" >Delete</a>
+       </div> 
+       <br/>
+    }  
+    <br/>
+</div>
+
+

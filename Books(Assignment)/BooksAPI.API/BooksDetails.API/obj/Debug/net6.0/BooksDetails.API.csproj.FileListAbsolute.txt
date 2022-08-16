@@ -1,0 +1,14 @@
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\bin\Debug\net6.0\BooksDetails.API.deps.json
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\bin\Debug\net6.0\BooksDetails.API.runtimeconfig.json
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\bin\Debug\net6.0\BooksDetails.API.dll
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\bin\Debug\net6.0\BooksDetails.API.pdb
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.csproj.AssemblyReference.cache
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.AssemblyInfoInputs.cache
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.AssemblyInfo.cs
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.csproj.CoreCompileInputs.cache
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.dll
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\refint\BooksDetails.API.dll
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.pdb
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\BooksDetails.API.genruntimeconfig.cache
+C:\Training(.NET)\Html\BooksAPI.API\BooksDetails.API\obj\Debug\net6.0\ref\BooksDetails.API.dll

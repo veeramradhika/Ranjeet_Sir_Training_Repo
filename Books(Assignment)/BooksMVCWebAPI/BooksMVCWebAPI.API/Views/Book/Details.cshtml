@@ -1,0 +1,60 @@
+﻿@model BooksMVCWebAPI.API.Models.BookViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BookViewModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @*@Html.DisplayNameFor(model => model.BookImage)*@
+        </dt>
+        <dd class = "col-sm-10">
+            @*@Html.DisplayFor(model => model.BookImage)*@
+            <img class="img-thumbnail" alt="Cinque Terre" src="/BookImage/@Model.BookImage" width="150" height="200" />
+        </dd>
+        <dt class = "col-sm-2 col-centered">
+            @Html.DisplayNameFor(model => model.BookId)
+        </dt>
+        <dd class = "col-sm-10 col-centered">
+            @Html.DisplayFor(model => model.BookId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BookName)
+        </dt>
+        <dd class = "col-sm-10 col-centered">
+            @Html.DisplayFor(model => model.BookName)
+        </dd>
+        <dt class = "col-sm-2 col-centered">
+            @Html.DisplayNameFor(model => model.BookZoner)
+        </dt>
+        <dd class = "col-sm-10 col-centered">
+            @Html.DisplayFor(model => model.BookZoner)
+        </dd>
+        <dt class = "col-sm-2 col-centered">
+            @Html.DisplayNameFor(model => model.RelaseDate)
+        </dt>
+        <dd class = "col-sm-10 col-centered">
+            @Html.DisplayFor(model => model.RelaseDate)
+        </dd>
+        <dt class = "col-sm-2 col-centered">
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+        <dd class = "col-sm-10 col-centered">
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+        
+    </dl>
+</div>
+<br/>
+<div>
+   @* @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a asp-action="Index">Back to List</a>
+    <a asp-action="AddCart" asp-route-id="@Model.BookId" asp-controller="Book" class="btn btn-warning">Add Cart</a>
+    <a asp-action="Buy Now" asp-controller="Book" class="btn btn-success">Buy Now</a>
+</div>
